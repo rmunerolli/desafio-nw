@@ -1,5 +1,5 @@
 # Desafio-nw
-Sistema de importação de dados através de arquivo txt. 
+Sistema de importação de dados através de arquivo txt utilizando NodeJS, Postgres, Docker.
 ## Instalação
 
 Clone o repositório 
