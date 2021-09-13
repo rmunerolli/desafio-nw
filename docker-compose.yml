@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+
+    desafio:
+        build:
+            context: ./api
+            dockerfile: Dockerfile
+        image: node
+        container_name: desafio
+        ports:
+            - 4000:4000
+        volumes:
+            - ./api:/var/node
+    postgres:
+        image: postgres:9.6
+        container_name: "neoway-postgres"
+        environment:
+        - POSTGRES_DB=neoway
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=1q2w3e
+        - TZ=GMT
+        volumes:
+        - "./postgreSql/data/postgres:/var/lib/postgresql/data"
+        ports:
+        - 5432:5432

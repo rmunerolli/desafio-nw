@@ -1,0 +1,14 @@
+{
+    "debug": false,
+    "server": {
+        "bind": "localhost",
+        "port": 4000
+    },
+    "pgsql": {
+        "user": "postgres",
+        "host": "neoway-postgres",
+        "database": "neoway",
+        "password": "1q2w3e",
+        "port": 5432
+    }
+}
